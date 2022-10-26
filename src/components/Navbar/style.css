@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #e5e5e5;
+  width: 100%;
+}
+
+.navbar .navbar__item {
+  display: flex;
+}

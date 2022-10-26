@@ -5,6 +5,9 @@
   height: 80px;
   background-color: #e5e5e5;
   width: 100%;
+  overflow: hidden; /*sticky header*/
+  position: sticky; /*sticky header*/
+  top: 0;
 }
 
 .navbar .navbar__item {

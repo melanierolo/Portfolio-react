@@ -12,6 +12,11 @@
   color: #161616;
 }
 
+.menu-item a:hover {
+  text-decoration: none;
+  color: #e40037;
+}
+
 @media screen and (max-width: 960px) {
   .menu-item {
     padding: 2rem;

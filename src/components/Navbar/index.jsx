@@ -9,7 +9,7 @@ import { faBars, faXmarkSquare } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar() {
   const menuItems = [
     "Home",
-    "About Me",
+    "About",
     "Projects",
     "Skills",
     "Education",

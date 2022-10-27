@@ -4,5 +4,6 @@
 }
 
 .app-page {
-  height: 2000px;
+  min-height: 2000px;
+  top: 80px;
 }

@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import "./style.css";
 import Logo from "../Logo";
 import MenuItem from "../MenuItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmarkSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const menuItems = [
@@ -14,6 +16,7 @@ export default function Navbar() {
     "Contact",
   ];
   const [shadow, setShadow] = useState(false);
+  const [mobile, setMobile] = useState(true);
 
   useEffect(() => {
     const onScroll = () => {
@@ -30,14 +33,25 @@ export default function Navbar() {
   }, []);
 
   //console.log(shadow);
+  //Show menu in mobile
+  const handleToggle = () => {
+    setMobile(!mobile);
+  };
   return (
-    <div className={shadow ? "navbar active" : "navbar"}>
+    <nav className={shadow ? "navbar active-shadow" : "navbar"}>
       <Logo />
-      <ul className="navbar__item">
+      <div className="menu-icon" onClick={handleToggle}>
+        {mobile ? (
+          <FontAwesomeIcon icon={faBars} />
+        ) : (
+          <FontAwesomeIcon icon={faXmarkSquare} />
+        )}
+      </div>
+      <ul className={mobile ? "navbar__menu" : "navbar__menu active"}>
         {menuItems.map((item, i) => {
           return <MenuItem key={i} item={item} />;
         })}
       </ul>
-    </div>
+    </nav>
   );
 }

@@ -5,7 +5,7 @@ export default function MenuItem(props) {
   const { item } = props;
   return (
     <li className="menu-item">
-      <a href="#">{item}</a>
+      <a href={`#${item.toLowerCase()}`}>{item}</a>
     </li>
   );
 }

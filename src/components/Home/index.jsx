@@ -4,7 +4,7 @@ import "./style.css";
 export default function Home() {
   return (
     <section className="home" id="home">
-      Home
+      <h1>Home</h1>
     </section>
   );
 }

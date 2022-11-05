@@ -1,0 +1,43 @@
+:root {
+  --secondary: #00e4ad;
+  --secondaryVariant: #00d389;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 2px solid var(--secondary);
+  background-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--secondary);
+  color: #242424;
+}
+
+.btn--secondary {
+  padding: 8px 20px;
+  transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 20px;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+.btn:hover,
+.btn--medium:hover,
+.btn--large:hover {
+  background-color: var(--secondaryVariant);
+  border-color: var(--secondaryVariant);
+  color: #242424;
+  transition: 240ms;
+}

@@ -1,9 +1,26 @@
 import React from "react";
 import "./style.css";
 import ButtonElement from "../ButtonElement";
-import HomeImage from "../../assets/images/home-unsplash.png";
+import { useEffect, useState } from "react";
+import ImageDesktop from "../../assets/images/home-unsplash.png";
+import ImageMobile from "../../assets/images/home-unsplash-mobile.png";
 
 export default function Home() {
+  const [homeImage, setHomeImage] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.pageYOffset < 960) {
+        setHomeImage(true);
+      } else {
+        setHomeImage(false);
+      }
+    };
+    // clean up code
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   return (
     <section className="home" id="home">
       <div className="home-content">
@@ -32,7 +49,10 @@ export default function Home() {
         </div>
       </div>
       <div className="home-image">
-        <img src={HomeImage} alt="A laptop -unplash" />
+        <img
+          src={homeImage ? ImageMobile : ImageDesktop}
+          alt="A laptop -unplash"
+        />
       </div>
     </section>
   );

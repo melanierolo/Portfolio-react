@@ -1,6 +1,52 @@
+:root {
+  --backgroundPage: #e5e5e5;
+}
+
 .home {
-  min-height: 100vh;
+  height: 100vh;
   scroll-margin-top: 80px;
   text-align: center;
-  background-color: rgb(188, 160, 216);
+  background-color: var(--backgroundPage);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home .home-content {
+  position: static;
+  padding: 12% 4% 0% 1%;
+}
+
+.home .home-content .home-message {
+  margin: 0 0 0 20px;
+  text-align: left;
+  font-size: 56px;
+  padding: 30px 0;
+}
+
+.home .home-content .home-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home .home-image {
+  background-color: var(--backgroundPage);
+  margin: 0%;
+}
+
+.home .home-image img {
+  height: 100vh;
+  max-width: 100%;
+  display: block;
+  border-radius: 50% 0% 0% 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .home .home-content {
+    position: static;
+    padding: 15% 3% 0% 1%;
+  }
+  .home .home-content .home-message {
+    font-size: 48px;
+    margin: 0 0 0 15px;
+  }
 }

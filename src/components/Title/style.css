@@ -1,0 +1,13 @@
+.title {
+  font-size: 48px;
+  font-weight: 500;
+  padding: 50px;
+  font-family: "Merriweather", serif;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    padding: 20px;
+    font-size: 36px;
+  }
+}

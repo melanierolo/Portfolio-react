@@ -1,6 +1,61 @@
 .about {
   min-height: 100vh;
+  height: auto;
   scroll-margin-top: 80px;
   text-align: center;
-  background-color: rgb(65, 198, 198);
+  padding: 0 15% 5% 15%;
+}
+
+.about-content {
+  display: flex;
+  align-items: start;
+}
+
+@media screen and (max-width: 770px) {
+  .about {
+    padding: 3% 5%;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .about {
+    padding: 3% 10%;
+  }
+}
+
+.about-content .about-paragraph {
+  flex: 1;
+  text-align: left;
+}
+.about-content .about-paragraph p {
+  font-size: 20px;
+  padding: 0 0 15px 0;
+}
+
+.about-content .about-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+.about-content .about-image .about-img {
+  width: 80%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+}
+.about-content .about-image .about-img img {
+  border-radius: 0 0 50% 0;
+  width: 350px;
+  height: 450px;
+  max-width: 100%;
+  object-fit: contain;
 }

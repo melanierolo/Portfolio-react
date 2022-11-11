@@ -45,7 +45,7 @@
 
 .about-content .about-paragraph {
   flex: 1;
-  text-align: left;
+  text-align: justify;
 }
 .about-content .about-paragraph p {
   font-size: 20px;

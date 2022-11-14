@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "title": "PacMen-Exercise",
+      "title": "PacMen",
       "subtitle": ["HTML", "CSS", "JavaScript"],
       "image": "images/project-pacmen.png",
       "description": "You could add a lot of PacMen on a page and they could move ramdonly.",
@@ -57,7 +57,7 @@
       "demoLink": "https://ktxt0g.csb.app/#/"
     },
     {
-      "title": "Fullstack-restaurant-app",
+      "title": "Full Stack Restaurant app",
       "subtitle": ["NextJS", ",Graphql", "strapi", "stripe", "sqlite3"],
       "image": "images/project-full-stack-restaurant.png",
       "description": "This project was successfully carried out and it was develop for the course Full Stack Development with MERN (MITxPro).The main features being as follows: Home page, search funcionality, cart functionality, check out, log in and logout",

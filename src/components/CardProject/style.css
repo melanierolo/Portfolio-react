@@ -15,7 +15,7 @@
 }
 
 .container .card .overlay {
-  height: 55px;
+  height: 100px;
   bottom: 0px;
   position: absolute;
   background: rgb(85, 85, 85); /* Fallback color */

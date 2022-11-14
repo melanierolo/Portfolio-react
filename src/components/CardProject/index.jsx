@@ -19,7 +19,6 @@ const CardProject = (props) => {
               onClick={(event) => {
                 event.preventDefault();
                 window.open(gitHubLink, "_blank");
-                console.log(gitHubLink);
               }}
               buttonStyle="btn--secondary"
               buttonSize="btn--medium"

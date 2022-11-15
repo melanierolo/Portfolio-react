@@ -14,7 +14,7 @@
     { "name": "git" }
   ],
   "learning": [
-    { "name": "redux" },
+    { "name": "Redux" },
     { "name": "AWS" },
     { "name": "Java" },
     { "name": "Sass" }

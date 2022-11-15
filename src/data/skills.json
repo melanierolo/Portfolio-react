@@ -1,0 +1,22 @@
+{
+  "skills": [
+    { "name": "HTML5" },
+    { "name": "CSS3" },
+    { "name": "JavaScript" },
+    { "name": "Figma" },
+    { "name": "Bootstrap" },
+    { "name": "Material UI" },
+    { "name": "React" },
+    { "name": "Docker " },
+    { "name": "ExpressJS" },
+    { "name": "NodeJS" },
+    { "name": "MongoDB" },
+    { "name": "git" }
+  ],
+  "learning": [
+    { "name": "Redux" },
+    { "name": "AWS" },
+    { "name": "Java" },
+    { "name": "Sass" }
+  ]
+}

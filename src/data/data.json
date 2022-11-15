@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "title": "Full Stack Restaurant app",
+      "subtitle": ["NextJS", ",Graphql", "strapi", "stripe", "sqlite3"],
+      "image": "images/project-full-stack-restaurant.png",
+      "description": "This project was successfully carried out and it was develop for the course Full Stack Development with MERN (MITxPro).The main features being as follows: Home page, search funcionality, cart functionality, check out, log in and logout",
+      "gitHubLink": "https://github.com/melanierolo/Fullstack-restaurant-app",
+      "demoLink": "https://melanie-rodas-fullstack-restaurant-jbjsign1o-melanierolo.vercel.app/"
+    },
+    {
+      "title": "Banking-app - Frontend",
+      "subtitle": ["bootstrap", "React"],
+      "image": "images/project-banking.png",
+      "description": "This was a capstone project for MIT Full Stack Development with MERN.It was used React Hooks for building user interfaces and react-bootstrap library was used on the stylesheet",
+      "gitHubLink": "https://github.com/melanierolo/banking-app",
+      "demoLink": "https://ktxt0g.csb.app/#/"
+    },
+    {
+      "title": "Job listings with filtering",
+      "subtitle": ["CSS", "React"],
+      "image": "images/project-Job-listings-with-filtering.png",
+      "description": "This project was develop to practice with data.json and filter data.Also, it was a challenge from Frontend Mentor",
+      "gitHubLink": "https://github.com/melanierolo/job-listings-with-filtering--React",
+      "demoLink": "https://job-listings-with-filtering-melanierolo.vercel.app/"
+    },
+    {
+      "title": "To-Do List App",
+      "subtitle": ["React"],
+      "image": "images/project-to-do.png",
+      "description": "This application was created in React. On this application you can create,edit and delete a todo list item",
+      "gitHubLink": "https://github.com/melanierolo/Portfolio",
+      "demoLink": "https://melanierolo.github.io/Portfolio/"
+    },
+    {
+      "title": "Portfolio",
+      "subtitle": ["HTML", "CSS", "JavaScript"],
+      "image": "images/project-portfolio.png",
+      "description": "This was a capstone project for MIT Full Stack Development with MERN and this belongs to the first part of the program.",
+      "gitHubLink": "https://github.com/melanierolo/Portfolio",
+      "demoLink": "https://melanierolo.github.io/Portfolio/"
+    },
+    {
+      "title": "Real Time Bus Tracker",
+      "subtitle": ["HTML", "CSS", "JavaScript"],
+      "image": "images/project-map.png",
+      "description": "Used a mapboxgl library to add a marker to the map between Harvard and MIT",
+      "gitHubLink": "https://github.com/melanierolo/Real-Time-Bus-Tracker",
+      "demoLink": "https://melanierolo.github.io/Real-Time-Bus-Tracker/"
+    },
+    {
+      "title": "Eye-Movement",
+      "subtitle": ["HTML", "CSS", "JavaScript"],
+      "image": "images/project-eye-movement.png",
+      "description": "In this project, someone is watching your movement when you change the mouse to another position",
+      "gitHubLink": "https://github.com/melanierolo/Eye-Movement",
+      "demoLink": "https://melanierolo.github.io/Eye-Movement/"
+    },
+    {
+      "title": "PacMen",
+      "subtitle": ["HTML", "CSS", "JavaScript"],
+      "image": "images/project-pacmen.png",
+      "description": "You could add a lot of PacMen on a page and they could move ramdonly.",
+      "gitHubLink": "https://github.com/melanierolo/PacMen-Exercise",
+      "demoLink": "https://melanierolo.github.io/PacMen-Exercise/"
+    }
+  ]
+}

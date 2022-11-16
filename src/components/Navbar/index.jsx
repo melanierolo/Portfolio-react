@@ -39,7 +39,7 @@ export default function Navbar() {
   };
   return (
     <nav className={shadow ? "navbar active-shadow" : "navbar"}>
-      <Logo />
+      <Logo color="logo--colorA" />
       <div className="menu-icon" onClick={handleToggle}>
         {mobile ? (
           <FontAwesomeIcon icon={faBars} />

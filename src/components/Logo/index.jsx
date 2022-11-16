@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 export default function Logo(props) {
-  //color = logo--colorA or logo--colorA
+  //color = logo--colorA or logo--colorB
   const { color } = props;
   return (
     <div className={`logo ${color}`}>

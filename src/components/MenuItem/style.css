@@ -10,6 +10,7 @@
 .menu-item a {
   text-decoration: none;
   color: #161616;
+  font-weight: bold;
 }
 
 .menu-item a:hover {

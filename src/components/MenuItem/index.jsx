@@ -10,7 +10,9 @@ export default function MenuItem(props) {
   };
   return (
     <li className="menu-item">
-      <NavLink onClick={handleLinkClick}>{item}</NavLink>
+      <NavLink onClick={handleLinkClick} to={`/#${item.toLowerCase()}`}>
+        {item}
+      </NavLink>
     </li>
   );
 }

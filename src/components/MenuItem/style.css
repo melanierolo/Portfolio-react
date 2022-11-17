@@ -9,10 +9,16 @@
 
 .menu-item a {
   text-decoration: none;
-  color: #161616;
   font-weight: bold;
 }
 
+.font-white a {
+  color: whitesmoke;
+}
+
+.font-black a {
+  color: #121212;
+}
 .menu-item a:hover {
   text-decoration: none;
   color: #e40037;

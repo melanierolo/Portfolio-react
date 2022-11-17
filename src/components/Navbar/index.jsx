@@ -50,7 +50,7 @@ export default function Navbar() {
       </div>
       <ul className={mobile ? "navbar__menu" : "navbar__menu active"}>
         {menuItems.map((item, i) => {
-          return <MenuItem key={i} item={item} />;
+          return <MenuItem key={i} item={item} fontColor={"font-black"} />;
         })}
       </ul>
       <Outlet />

@@ -16,6 +16,7 @@ function App() {
     <div className="app-page">
       <BrowserRouter>
         <Navbar />
+
         <Routes>
           <Route
             path="/"
@@ -32,8 +33,8 @@ function App() {
           ></Route>
           <Route path="*" element={<NotFoundPage />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

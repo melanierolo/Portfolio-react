@@ -5,6 +5,7 @@ import Logo from "../Logo";
 import MenuItem from "../MenuItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmarkSquare } from "@fortawesome/free-solid-svg-icons";
+import { Outlet } from "react-router-dom";
 
 export default function Navbar() {
   const menuItems = [
@@ -52,6 +53,7 @@ export default function Navbar() {
           return <MenuItem key={i} item={item} />;
         })}
       </ul>
+      <Outlet />
     </nav>
   );
 }

@@ -4,7 +4,7 @@
 }
 
 .app-page {
-  min-height: 2000px;
+  min-height: 100vh;
   top: 80px;
   background-color: #fafafa;
 }

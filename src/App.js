@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NotFoundPage from "./components/NotFoundPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               </>
             }
           ></Route>
+          <Route path="*" element={<NotFoundPage />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

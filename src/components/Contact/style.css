@@ -19,6 +19,7 @@
 .contact-content .contact-left {
   flex: 1;
   text-align: left;
+  padding: 0 0 16px 0;
 }
 
 .contact-content .contact-left p {
@@ -36,4 +37,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 770px) {
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-content .contact-left {
+    width: 100%;
+  }
+  .contact-content .contact-right {
+    width: 100%;
+  }
 }

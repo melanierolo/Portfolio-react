@@ -3,6 +3,7 @@ import Title from "../Title";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import ContactForm from "../ContactForm";
 
 export default function Contact() {
   return (
@@ -28,8 +29,7 @@ export default function Contact() {
           </a>
         </div>
         <section className="contact-right">
-          <h2>Get in touch</h2>
-          <p></p>
+          <ContactForm />
         </section>
       </div>
     </section>

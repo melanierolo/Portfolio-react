@@ -37,6 +37,8 @@ export default function ContactForm() {
     },
   });
 
+  //console.log("Visited fields:", formik.touched);
+
   return (
     <>
       <form className="contact-form" onSubmit={formik.handleSubmit}>
@@ -50,10 +52,12 @@ export default function ContactForm() {
             autoComplete="off"
             placeholder="John Smith"
             className="contact-form__form-group__input"
+            onBlu
+            r={formik.handleBlur}
             onChange={formik.handleChange}
             value={formik.values.name}
           />
-          {formik.errors.name ? (
+          {formik.touched.name && formik.errors.name ? (
             <div className="error-message">{formik.errors.name}</div>
           ) : null}
         </div>
@@ -66,10 +70,11 @@ export default function ContactForm() {
             type="email"
             placeholder="example@domain.com"
             className="contact-form__form-group__input"
+            onBlur={formik.handleBlur}
             onChange={formik.handleChange}
             value={formik.values.email}
           />
-          {formik.errors.email ? (
+          {formik.touched.email && formik.errors.email ? (
             <div className="error-message">{formik.errors.email}</div>
           ) : null}
         </div>
@@ -94,10 +99,11 @@ export default function ContactForm() {
             autoComplete="off"
             placeholder="Your questions and comments"
             className="contact-form__form-group__input"
+            onBlur={formik.handleBlur}
             onChange={formik.handleChange}
             value={formik.values.message}
           />
-          {formik.errors.message ? (
+          {formik.touched.message && formik.errors.message ? (
             <div className="error-message">{formik.errors.message}</div>
           ) : null}
         </div>

@@ -38,6 +38,8 @@ export default function ContactForm() {
   });
 
   //console.log("Visited fields:", formik.touched);
+  //console.log("Formik props", formik);
+  //console.log("button-conact-form",formik.dirty && !formik.isValid,!formik.dirty,formik.isValid);
 
   return (
     <>
@@ -52,8 +54,7 @@ export default function ContactForm() {
             autoComplete="off"
             placeholder="John Smith"
             className="contact-form__form-group__input"
-            onBlu
-            r={formik.handleBlur}
+            onBlur={formik.handleBlur}
             onChange={formik.handleChange}
             value={formik.values.name}
           />
@@ -113,6 +114,7 @@ export default function ContactForm() {
           type="submit"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
+          disabled={!(formik.dirty && formik.isValid)}
         >
           Send message
         </ButtonElement>

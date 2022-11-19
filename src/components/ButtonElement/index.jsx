@@ -3,7 +3,6 @@ import "./style.css";
 
 export default function ButtonElement(props) {
   let { children, type, onClick, buttonStyle, buttonSize, disabled } = props;
-  console.log(buttonStyle);
 
   return (
     <button

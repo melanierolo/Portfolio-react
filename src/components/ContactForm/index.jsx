@@ -20,6 +20,7 @@ export default function ContactForm() {
         arrayValues.message !== ""
       )
         alert(JSON.stringify(`Form Successful!!!`));
+      console.log("click submit");
     },
     validate: (values) => {
       let errors = {};
@@ -32,14 +33,10 @@ export default function ContactForm() {
         errors.email = "Please enter a valid email";
       }
       if (!values.message) errors.message = "Please enter a message";
-      console.log(errors);
+      //console.log(errors);
       return errors;
     },
   });
-
-  //console.log("Visited fields:", formik.touched);
-  //console.log("Formik props", formik);
-  //console.log("button-conact-form",formik.dirty && !formik.isValid,!formik.dirty,formik.isValid);
 
   return (
     <>
@@ -114,7 +111,7 @@ export default function ContactForm() {
           type="submit"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
-          disabled={!(formik.dirty && formik.isValid)}
+          disabled={!(formik.dirty && formik.isValid) || formik.isSubmitting}
         >
           Send message
         </ButtonElement>

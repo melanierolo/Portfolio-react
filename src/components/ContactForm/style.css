@@ -40,3 +40,11 @@
   padding: 4px;
   background-color: fff;
 }
+
+/*Set a style for formik errors*/
+
+.error-message {
+  background-color: #ffcaca;
+  color: red;
+  padding: 5px 0 5px 0;
+}

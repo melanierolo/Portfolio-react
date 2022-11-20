@@ -1,0 +1,50 @@
+.contact-form {
+  max-width: 450px;
+  height: auto;
+  padding: 1rem 2rem;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border: 1px solid #acacac;
+  border-radius: 0.5rem;
+  background-color: #5e5e5e;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.contact-form__form-group label {
+  color: whitesmoke;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.contact-form__form-group textarea {
+  height: 5rem;
+}
+
+.contact-form__form-group__input {
+  border: 1px solid #acacac;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 30px;
+  margin: 4px 0;
+  padding: 4px;
+  background-color: fff;
+}
+
+/*Set a style for formik errors*/
+
+.error-message {
+  background-color: #ffcaca;
+  color: red;
+  padding: 5px 0 5px 0;
+}

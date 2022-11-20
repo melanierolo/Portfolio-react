@@ -2,8 +2,7 @@ import React from "react";
 import "./style.css";
 
 export default function ButtonElement(props) {
-  let { children, type, onClick, buttonStyle, buttonSize } = props;
-  console.log(buttonStyle);
+  let { children, type, onClick, buttonStyle, buttonSize, disabled } = props;
 
   return (
     <button
@@ -16,6 +15,9 @@ export default function ButtonElement(props) {
       }`}
       type={type}
       onClick={onClick}
+      disabled={
+        typeof disabled === "boolean" && disabled === true ? true : false
+      }
     >
       {children}
     </button>

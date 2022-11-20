@@ -1,0 +1,45 @@
+:root {
+  --secondary: #00e4ad;
+  --primary: #e40037;
+  --colorBlack: #121212;
+}
+
+.logo {
+  margin: 0px 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.logo--colorA {
+  color: var(--colorBlack);
+}
+
+.logo--colorB {
+  color: var(--secondary);
+}
+
+.logo::before {
+  content: "<";
+}
+
+.logo::after {
+  content: "/>";
+}
+
+.logo::before,
+.logo::after {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 570px) {
+  .logo {
+    font-size: 14px;
+  }
+  .logo::before,
+  .logo::after {
+    font-size: 14px;
+  }
+}

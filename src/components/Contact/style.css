@@ -1,0 +1,52 @@
+.contact {
+  height: auto;
+  scroll-margin-top: 80px;
+  text-align: center;
+  padding: 0 15% 5% 15%;
+}
+
+@media screen and (max-width: 1270px) {
+  .contact {
+    padding: 3% 10%;
+  }
+}
+
+.contact-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-content .contact-left {
+  flex: 1;
+  text-align: left;
+  padding: 0 0 16px 0;
+}
+
+.contact-content .contact-left p {
+  color: #121212;
+  margin: 16px 0px;
+}
+.contact-content .contact-left a {
+  color: #121212;
+  margin: 0px 10px;
+  text-align: center;
+}
+
+.contact-content .contact-right {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 770px) {
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-content .contact-left {
+    width: 100%;
+  }
+  .contact-content .contact-right {
+    width: 100%;
+  }
+}

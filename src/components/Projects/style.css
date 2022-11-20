@@ -1,0 +1,25 @@
+.projects {
+  min-height: 100vh;
+  scroll-margin-top: 80px;
+  text-align: center;
+  padding: 0 15% 5% 15%;
+}
+
+@media screen and (max-width: 770px) {
+  .projects {
+    padding: 3% 5%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .projects {
+    padding: 3% 10%;
+  }
+}
+
+.projects .project-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}

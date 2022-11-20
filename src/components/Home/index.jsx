@@ -6,7 +6,7 @@ import ImageDesktop from "../../assets/images/home-unsplash.png";
 import ImageMobile from "../../assets/images/home-unsplash-mobile.png";
 
 export default function Home() {
-  const [homeImage, setHomeImage] = useState(false);
+  const [homeImage, setHomeImage] = useState(true);
 
   useEffect(() => {
     const onScroll = () => {

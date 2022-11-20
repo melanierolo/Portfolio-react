@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { useFormik } from "formik";
 import ButtonElement from "../ButtonElement";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const formik = useFormik({
@@ -11,16 +12,50 @@ export default function ContactForm() {
       subject: "",
       message: "",
     },
-    onSubmit: (values) => {
+    onSubmit: (values, actions) => {
       console.log("form:", values);
       let arrayValues = Object.keys(values);
       if (
         arrayValues.name !== "" &&
         arrayValues.email !== "" &&
         arrayValues.message !== ""
-      )
-        alert(JSON.stringify(`Form Successful!!!`));
-      console.log("click submit");
+      ) {
+        emailjs
+          .send(
+            `${process.env.REACT_APP_MAIL_SERVICE_ID}`,
+            `${process.env.REACT_APP_MAIL_TEMPLATE_ID}`,
+            {
+              to_name: "Melanie",
+              from_name: values.name,
+              reply_to: values.email,
+              message_html: values.message,
+              message_subject: values.subject,
+            },
+            `${process.env.REACT_APP_MAIL_PUBLIC_KEY}`
+          )
+          .then(() => {
+            actions.resetForm({
+              values: {
+                // the type of `values` inferred to be contact form
+                name: "",
+                email: "",
+                subject: "",
+                message: "",
+              },
+            });
+            actions.setSubmitting(false);
+            console.log("send a email");
+          })
+          .catch((error) => {
+            actions.setSubmitting(false);
+            alert(
+              "Error sending email. " +
+                "Error :  " +
+                JSON.stringify(error.status) +
+                JSON.stringify(error.text)
+            );
+          });
+      }
     },
     validate: (values) => {
       let errors = {};
@@ -59,7 +94,6 @@ export default function ContactForm() {
             <div className="error-message">{formik.errors.name}</div>
           ) : null}
         </div>
-        {formik.errors.name ? <div>{formik.errors.name}</div> : null}
         <div className="contact-form__form-group">
           <label htmlFor="gmail">E-mail:</label>
           <input

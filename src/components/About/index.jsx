@@ -12,7 +12,7 @@ export default function About() {
           <p>
             My name is Melanie Rodas a Full-Stack developer based in Lima,Peru
             and I completed my Bachelor's degree in Telecommunications
-            Engineering in 2019, . In addition, I'm a responsible,critical
+            Engineering in 2019. In addition, I'm a responsible,critical
             thinking, ability to work in a team, with ease of adaptation to
             change and new tecnologies.{" "}
           </p>

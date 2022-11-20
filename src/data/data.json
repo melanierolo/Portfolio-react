@@ -29,8 +29,8 @@
       "subtitle": ["React"],
       "image": "images/project-to-do.png",
       "description": "This application was created in React. On this application you can create,edit and delete a todo list item",
-      "gitHubLink": "https://github.com/melanierolo/Portfolio",
-      "demoLink": "https://melanierolo.github.io/Portfolio/"
+      "gitHubLink": "https://github.com/melanierolo/to-do-list-application",
+      "demoLink": "https://melanierolo.github.io/to-do-list-application/"
     },
     {
       "title": "Portfolio",

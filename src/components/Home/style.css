@@ -78,7 +78,7 @@
   .home .home-content {
     position: relative;
     height: 100vh;
-    z-index: 5;
+    z-index: 3;
   }
   .home .home-content .home-message {
     font-size: 48px;

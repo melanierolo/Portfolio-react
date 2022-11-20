@@ -1,3 +1,7 @@
+:root {
+  --timelineColorC: #e5e5e5;
+  --timelineColorD: #121212;
+}
 .education {
   scroll-margin-top: 80px;
 }
@@ -32,7 +36,11 @@
   height: 100%;
   width: 3px;
   left: 50%;
-  background-image: linear-gradient(260deg, #270a3e 46%, #451a3e 10%);
+  background-image: linear-gradient(
+    260deg,
+    var(--timelineColorD) 46%,
+    var(--timelineColorD) 10%
+  );
   transform: translateY(0px);
 }
 .timeline__container ul {
@@ -64,7 +72,7 @@
 .timeline__container ul li .timeline__subtitle {
   font-size: 22px;
   font-weight: 500;
-  color: #451a3e;
+  color: var(--timelineColorB);
 }
 ul li p {
   font-size: 17px;
@@ -75,7 +83,7 @@ ul li p {
 
 .timeline__container ul li a {
   font-size: 15px;
-  color: #451a3e;
+  color: var(--timelineColorB);
   text-decoration: none;
 }
 
@@ -86,10 +94,26 @@ ul li .timeline__date {
   width: 135px;
   border-radius: 15px;
   color: whitesmoke;
-  background-image: -webkit-linear-gradient(270deg, #451a3e 0%, #270a3e 46%);
-  background-image: -moz-linear-gradient(270deg, #451a3e 0%, #270a3e 46%);
-  background-image: -o-linear-gradient(270deg, #451a3e 0%, #270a3e 46%);
-  background-image: linear-gradient(270deg, #451a3e 0%, #270a3e 46%);
+  background-image: -webkit-linear-gradient(
+    270deg,
+    var(--timelineColorC) 0%,
+    var(--timelineColorD) 60%
+  );
+  background-image: -moz-linear-gradient(
+    270deg,
+    var(--timelineColorC) 0%,
+    var(--timelineColorD) 60%
+  );
+  background-image: -o-linear-gradient(
+    270deg,
+    var(--timelineColorC) 0%,
+    var(--timelineColorD) 60%
+  );
+  background-image: linear-gradient(
+    270deg,
+    var(--timelineColorC) 0%,
+    var(--timelineColorD) 60%
+  );
   display: grid;
   place-items: center;
 }
@@ -100,8 +124,8 @@ ul li .timeline__date {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: #270a3e;
-  border: 4px solid #451a3e;
+  background-color: var(--timelineColorC);
+  border: 4px solid var(--timelineColorD);
   border-radius: 50%;
   transform: translateX(-50px);
   top: -45px;
@@ -113,8 +137,8 @@ ul li .timeline__date {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: #270a3e;
-  border: 4px solid #451a3e;
+  background-color: var(--timelineColorC);
+  border: 4px solid var(--timelineColorD);
   border-radius: 50%;
   transform: translateX(-50px);
   top: -40px;

@@ -76,8 +76,9 @@
     background-color: transparent;
   }
   .home .home-content {
+    position: relative;
     height: 100vh;
-    z-index: -3;
+    z-index: 5;
   }
   .home .home-content .home-message {
     font-size: 48px;
@@ -90,13 +91,13 @@
   .home .home-image {
     height: 100%;
     position: relative;
-    z-index: -2;
     top: -100vh;
   }
   .home .home-image img {
     width: auto;
     border-radius: 0%;
     height: 100vh;
+    width: 100vh;
     opacity: 0.3;
   }
 }

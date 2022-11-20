@@ -24,7 +24,10 @@
   font-size: 60px;
   padding: 30px 0;
 }
-
+.home .home-content .home-message h1 {
+  font-size: 60px;
+  color: #e40037;
+}
 .home .home-content .home-buttons {
   display: flex;
   justify-content: space-around;
@@ -64,6 +67,9 @@
     font-size: 48px;
     margin: 0 0 0 15px;
   }
+  .home .home-content .home-message h1 {
+    font-size: 48px;
+  }
 
   .home .home-image img {
     width: 550px;
@@ -84,6 +90,9 @@
     font-size: 48px;
     text-align: center;
     padding: 35% 15% 2%;
+  }
+  .home .home-content .home-message h1 {
+    font-size: 48px;
   }
   .home .home-content .home-buttons {
     padding: 2% 15%;
@@ -106,6 +115,9 @@
   .home .home-content .home-message {
     font-size: 36px;
     padding: 50% 5% 2%;
+  }
+  .home .home-content .home-message h1 {
+    font-size: 36px;
   }
   .home .home-content .home-buttons {
     padding: 2% 5%;

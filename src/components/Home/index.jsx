@@ -26,9 +26,7 @@ export default function Home() {
       <div className="home-content">
         <div className="home-message">
           <p>Welcome, </p>
-          <span>
-            <b>I’m Melanie Rodas</b>{" "}
-          </span>
+          <h1>I’m Melanie Rodas</h1>
           <p>a Web Developer</p>
         </div>
         <div className="home-buttons">

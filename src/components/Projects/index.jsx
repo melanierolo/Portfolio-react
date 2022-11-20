@@ -6,7 +6,7 @@ import allProjects from "../../data/data.json";
 
 export default function Projects() {
   const projectsData = allProjects.projects;
-  console.log(projectsData);
+  //console.log(projectsData);
   return (
     <section className="projects" id="projects">
       <Title>Projects</Title>

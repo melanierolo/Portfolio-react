@@ -5,7 +5,6 @@ import ButtonElement from "../ButtonElement";
 const CardProject = (props) => {
   const { title, subtitle, image, description, gitHubLink, demoLink } = props;
   const allSubtitle = subtitle.join(" • ");
-  console.log(gitHubLink);
   return (
     <div className="container">
       <div className="card">

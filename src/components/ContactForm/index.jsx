@@ -13,7 +13,7 @@ export default function ContactForm() {
       message: "",
     },
     onSubmit: (values, actions) => {
-      console.log("form:", values);
+      //console.log("form:", values);
       let arrayValues = Object.keys(values);
       if (
         arrayValues.name !== "" &&

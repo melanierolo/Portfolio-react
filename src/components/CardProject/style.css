@@ -10,7 +10,7 @@
   margin: 0 auto;
   width: 300px;
   height: 350px;
-  box-shadow: 5px 5px 20px rgb(65, 65, 65);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   border-radius: 25px;
 }
 
@@ -29,15 +29,20 @@
   border-radius: 0 0 25px 25px;
   padding: 10px 20px;
   text-align: left;
-
-  transition: all 0.05s ease-in-out;
+  /* CSS transitions */
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .container .card h1 {
   color: black;
+  font-size: 20px;
+  padding: 8px 0;
 }
 
 .container .card h3 {
   color: #898989;
+  font-size: 16px;
 }
 
 .container .card .overlay .overlay-btn {
@@ -78,4 +83,10 @@
 .container .card:hover .overlay-btn {
   opacity: 1;
   visibility: visible;
+  padding: 16px 0;
+}
+
+.container .card:hover .overlay-btn {
+  display: flex;
+  justify-content: space-around;
 }

@@ -10,18 +10,19 @@ export default function About() {
       <div className="about-content">
         <div className="about-paragraph">
           <p>
-            My name is Melanie Rodas a Full-Stack developer based in Lima,Peru
+            My name is Melanie Rodas a Full-Stack developer based in Lima-Peru
             and I completed my Bachelor's degree in Telecommunications
-            Engineering in 2019, . In addition, I'm a responsible,critical
+            Engineering in 2019. In addition, I'm a responsible,critical
             thinking, ability to work in a team, with ease of adaptation to
             change and new tecnologies.{" "}
           </p>
           <p>
             I took a Professional Certificate in Coding: Full Stack Development
-            with MERN from August 2021 to June 2022 in MITxPRO in collaboration
-            with Emeritus. Thanks to this, I’ve learned about one of the most
-            popular framework called React, JavaScript,HTML,CSS MongoDB,
-            ExpressJS,NodeJS,git and the essetials for working in the cloud.
+            with MERN from August 2021 to June 2022 in MITxPRO (USA) in
+            collaboration with Emeritus. Thanks to this, I’ve learned about one
+            of the most popular framework called React, JavaScript, HTML, CSS
+            MongoDB, ExpressJS, NodeJS, git and the essetials for working in the
+            cloud.
           </p>
         </div>
         <div className="about-image">

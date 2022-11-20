@@ -6,7 +6,7 @@ import ImageDesktop from "../../assets/images/home-unsplash.png";
 import ImageMobile from "../../assets/images/home-unsplash-mobile.png";
 
 export default function Home() {
-  const [homeImage, setHomeImage] = useState(false);
+  const [homeImage, setHomeImage] = useState(true);
 
   useEffect(() => {
     const onScroll = () => {
@@ -26,9 +26,7 @@ export default function Home() {
       <div className="home-content">
         <div className="home-message">
           <p>Welcome, </p>
-          <span>
-            <b>I’m Melanie Rodas</b>{" "}
-          </span>
+          <h1>I’m Melanie Rodas</h1>
           <p>a Web Developer</p>
         </div>
         <div className="home-buttons">

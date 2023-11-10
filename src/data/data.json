@@ -1,13 +1,30 @@
 {
   "projects": [
     {
+      "title": "DEV08 BurgerQueen API",
+      "subtitle": [
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+        "Mongoose",
+        "API REST",
+        "JWT",
+        "e2e"
+      ],
+      "image": "images/restaurant-API.png",
+      "description": "The API is a RESTful web service designed to facilitate the management of orders for a hamburger restaurant. This API allows seamless communication between the restaurant's order management system and various client applications.",
+      "gitHubLink": "https://github.com/melanierolo/DEV008-burger-queen-api",
+      "demoLink": "https://dev-008-burger-queen-api-beta.vercel.app/"
+    },
+    {
       "title": "Full Stack Restaurant app",
-      "subtitle": ["NextJS", ",Graphql", "strapi", "stripe", "sqlite3"],
+      "subtitle": ["NextJS", "Graphql", "strapi", "stripe", "sqlite3"],
       "image": "images/project-full-stack-restaurant.png",
       "description": "This project was successfully carried out and it was develop for the course Full Stack Development with MERN (MITxPro).The main features being as follows: Home page, search funcionality, cart functionality, check out, log in and logout",
       "gitHubLink": "https://github.com/melanierolo/Fullstack-restaurant-app",
       "demoLink": "https://melanie-rodas-fullstack-restaurant-jbjsign1o-melanierolo.vercel.app/"
     },
+
     {
       "title": "Banking-app - Frontend",
       "subtitle": ["bootstrap", "React"],
@@ -31,6 +48,14 @@
       "description": "This application was created in React. On this application you can create,edit and delete a todo list item",
       "gitHubLink": "https://github.com/melanierolo/to-do-list-application",
       "demoLink": "https://melanierolo.github.io/to-do-list-application/"
+    },
+    {
+      "title": "Dev008- Data Lovers",
+      "subtitle": ["CSS", "HTML", "JavaScript", "JEST", "git"],
+      "image": "images/project-data-lovers.png",
+      "description": "Its main objective was to facilitate user interaction by providing features for filtering, sorting, and presenting detailed information in a user-friendly manner for each Pokémon.",
+      "gitHubLink": "https://github.com/melanierolo/DEV008-data-lovers/tree/development",
+      "demoLink": "https://melanierolo.github.io/DEV008-data-lovers/"
     },
     {
       "title": "Portfolio",
